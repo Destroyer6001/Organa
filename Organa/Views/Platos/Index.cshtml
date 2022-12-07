@@ -1,0 +1,62 @@
+﻿@model IEnumerable<PlatoViewModel>
+@{
+    ViewData["Title"] = "Platos";
+}
+<div class="row">
+    <div class="col-md-10 offset-md-1 by-10 " id="IndexPlatos">
+        <div class="row" id="TituloIndicePlatos">
+            <h1>Platos</h1>
+        </div>
+
+        <div class="row" id="SubtituloIndicePlatos">
+            <h5>
+                Los platos son aquellos que la empresa organa ofrece a sus clientes en base a lo mas saludable que se tenga disponible
+            </h5>
+        </div>
+
+        <div class="row" id="BotonCrearIndicePlatos">
+            <a asp-action="Crear" class="btn mb-3">Crear</a>
+        </div>
+
+        <div class="row" id="TablaIndicePlatos">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
+                        <th>Cantidad Ingrediente 1</th>
+                        <th>Cantidad Ingrediente 2</th>
+                        <th>Cantidad Ingrediente 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Plato in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Plato.Nombre
+                            </td>
+                            <td>
+                                @Plato.Cantidad
+                            </td>
+                            <td>
+                                @Plato.Descripcion
+                            </td>
+                            <td>
+                                @Plato.CantidadCarne
+                            </td>
+                            <td>
+                                @Plato.CantidadGrano
+                            </td>
+                            <td>
+                                @Plato.CantidadArroz
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

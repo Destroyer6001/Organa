@@ -1,0 +1,92 @@
+﻿@model PlatoCreacionViewModel
+@{
+    ViewData["Title"] = "Crear Plato";
+}
+<div class="row">
+    <div class="col-md-8  offset-md-2 by-10" id="CrearPlato">
+
+        <div class="row" id="TituloCrearPlato">
+            <h1>Crear Plato</h1>
+        </div>
+
+        <div class="row" id="SubtituloCrearPlato">
+            <h5>
+                Los platos son aquellos que la empresa organa ofrece a sus clientes en base a lo mas saludable que se tenga disponible
+            </h5>
+        </div>
+
+        <div class="row" id="FormularioCrearPlato">
+            <form asp-action="Crear">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Descripcion" class="form-label"></label>
+                    <input asp-for="Descripcion" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Cantidad" class="form-label"></label>
+                    <input asp-for="Cantidad" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="SeleccionarImagen" class="form-label"></label>
+                    <input asp-for="SeleccionarImagen" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="SeleccionarImagen" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoriaCarneId" class="form-label"></label>
+                    <select asp-for="CategoriaCarneId" asp-items="Model.CategoriaCarne" class="form-select" id="CampoPlatoCrear"></select>
+                    <span asp-validation-for="CategoriaCarneId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CantidadCarne" class="form-label"></label>
+                    <input asp-for="CantidadCarne" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="CantidadCarne" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoriaGranoId" class="form-label"></label>
+                    <select asp-for="CategoriaGranoId" asp-items="Model.Categoriagrano" class="form-select" id="CampoPlatoCrear"></select>
+                    <span asp-validation-for="CategoriaGranoId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CantidadGrano" class="form-label"></label>
+                    <input asp-for="CantidadGrano" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="CantidadGrano" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoriaArrozId" class="form-label"></label>
+                    <select asp-for="CategoriaArrozId" asp-items="Model.CategoriaArroz" class="form-select" id="CampoPlatoCrear"></select>
+                    <span asp-validation-for="CategoriaArrozId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CantidadArroz" class="form-label"></label>
+                    <input asp-for="CantidadArroz" class="form-control" id="CampoPlatoCrear" />
+                    <span asp-validation-for="CantidadArroz" class="text-danger"></span>
+                </div>
+
+
+                <button type="submit" class="btn" id="boton-crearPlato">Enviar</button>
+                <a class="btn" asp-action="Index" id="boton-CancelarPlato">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,23 @@
+﻿@model IngredienteViewModel
+
+@{
+    ViewData["Title"] = "Borrar Ingrediente";
+}
+
+<div class="row">
+    <div class="col-md-8  offset-md-2 by-10" id="BorrarIngrediente">
+        <div class="row" id="TituloBorrarIngrediente">
+            <h1>Borrar Ingrediente</h1>
+        </div>
+        <div class="row" id="SubtituloBorrarIngrediente">
+            <h3 class="mb-3">¡Esta seguro que desea borrar el ingrediente @Model.Nombre</h3>
+        </div>
+        <div class="row" id="FormularioBorrarIngrediente">
+            <form asp-action="BorrarVehiculo">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn" id="BotonBorrarIngrediente">Borrar</button>
+                <a class="btn" asp-action="Index" id="botonCancelarIngrediente">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>

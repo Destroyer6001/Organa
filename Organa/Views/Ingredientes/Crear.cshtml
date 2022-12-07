@@ -1,0 +1,50 @@
+﻿@model IngredienteCreacionViewModel
+@{
+    ViewData["Title"] = "Crear Ingrediente";
+}
+<div class="row">
+    <div class="col-md-8  offset-md-2 by-10" id="CrearIngrediente">
+
+        <div class="row" id="TituloCrearIngrediente">
+            <h1>Crear Ingrediente</h1>
+        </div>
+
+        <div class="row" id="SubtituloCrearIngrediente">
+            <h5>
+                Los ingredientes son aquellos que componen los platos que ofrecemos como empresa
+            </h5>
+        </div>
+
+        <div class="row" id="FormularioCrearIngrediente">
+            <form asp-action="Crear">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" id="CampoIngredienteCrear" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Cantidad" class="form-label"></label>
+                    <input asp-for="Cantidad" class="form-control" id="CampoIngredienteCrear" />
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoriaId" class="form-label"></label>
+                    <select asp-for="CategoriaId" asp-items="Model.CategoriaViewModel" class="form-select" id="CampoIngredienteCrear"></select>
+                    <span asp-validation-for="CategoriaId" class="text-danger"></span>
+                </div>
+
+
+                <button type="submit" class="btn" id="boton-crearIngrediente">Enviar</button>
+                <a class="btn" asp-action="Index" id="boton-CancelarIngrediente">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+        <partial name="_ValidationScriptsPartial" />
+}

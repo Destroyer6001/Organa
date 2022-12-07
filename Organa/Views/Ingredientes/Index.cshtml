@@ -1,0 +1,55 @@
+﻿@model IEnumerable<IngredienteViewModel>
+@{
+    ViewData["Title"] = "Ingredientes";
+}
+<div class="row">
+    <div class="col-md-10 offset-md-1 by-10 " id="IndexIngredientes">
+        <div class="row" id="TituloIndiceIngredientes">
+            <h1>Ingredientes</h1>
+        </div>
+
+        <div class="row" id="SubtituloIndiceIngredientes">
+            <h5>
+                Los ingredientes son aquellos que componen los platos que ofrecemos como empresa
+            </h5>
+        </div>
+
+        <div class="row" id="BotonCrearIndiceIngredientes">
+            <a asp-action="Crear" class="btn mb-3">Crear</a>
+        </div>
+
+        <div class="row" id="TablaIndiceIngredientes">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Acciones</th>
+                        <th>Nombre</th>
+                        <th>Cantidad (g)</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Ingrediente in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a class="btn" asp-action="Editar" asp-route-id="@Ingrediente.Id" id="BotonEditarIndiceIngrediente">Editar</a>
+                                <a class="btn" asp-action="Borrar" asp-route-id="@Ingrediente.Id" id="BotonBorrarIndiceIngrediente">Borrar</a>
+                            </td>
+                            <td>
+                                @Ingrediente.Nombre
+                            </td>
+                            <td>
+                                @Ingrediente.Cantidad
+                            </td>
+                            <td>
+                                @Ingrediente.NombreCategoria
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@model CategoriaViewModel
+@{
+    ViewData["Title"] = "Editar Categoria";
+}
+
+<div class="row">
+    <div class="col-md-8  offset-md-2 by-10" id="EditarCategoria">
+        <div class="row" id="TituloEditarCategoria">
+            <h1>Editar Categoria</h1>
+        </div>
+
+        <div class="row" id="SubtituloEditarCategoria">
+            <h5>Una categoria hace referencia al tipo de ingrediente que un chef puede usar</h5>
+        </div>
+
+        <div class="row" id="FormularioEditarCategoria">
+            <form asp-action="Editar">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" id="CampoCategoriaEditar" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <button class="btn" id="EditarCategoriaBoton">Enviar</button>
+                <a class="btn" id="EditarCategoriaCancelar" asp-action="Index">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+}

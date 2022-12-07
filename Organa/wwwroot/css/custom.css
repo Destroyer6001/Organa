@@ -1,0 +1,611 @@
+﻿#TituloCrearCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloCrerCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#FormularioCrearCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+   
+}
+
+#CrearCategoria {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#CrearCategoriaBoton {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#CampoCategoriaCrear {
+    border-radius: 10px
+}
+
+
+#CrearCategoriaCancelar {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#IndexCategorias {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloIndiceCategorias {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloIndiceCategorias {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#TablaIndiceCategorias {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#BotonCrearIndiceCategorias {
+    margin-top: 30px;
+    background: #85C1E9;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 135px;
+    height: 45px;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+}
+
+#BotonEditarIndiceCategorias {
+    background: #58D68D;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+#BotonBorrarIndiceCategorias {
+    background: #EC7063;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#EditarCategoria {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloEditarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloEditarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#FormularioEditarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#EditarCategoriaBoton {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#EditarCategoriaCancelar {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#CampoCategoriaEditar {
+    border-radius: 10px
+}
+
+#BorrarCategoria {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#FormularioBorrarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+   
+}
+
+#TituloBorrarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloBorrarCategoria {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#BotonBorrarCategoria {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#botonCancelarBorrarCategoria {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#NoEncontradoLink {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#TituloNoEncontrado {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#NoEncontrado {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloCrearIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloCrearIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#FormularioCrearIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#CrearIngrediente {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#boton-crearIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#CampoIngredienteCrear {
+    border-radius: 10px
+}
+
+
+#boton-CancelarIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#IndexIngredientes {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloIndiceIngredientes {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloIndiceIngredientes {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+   
+}
+
+#TablaIndiceIngredientes {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#BotonCrearIndiceIngredientes {
+    margin-top: 30px;
+    background: #85C1E9;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 135px;
+    height: 45px;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+}
+
+#BotonEditarIndiceIngrediente {
+    background: #58D68D;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+#BotonBorrarIndiceIngrediente {
+    background: #EC7063;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#EditarIngrediente {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloEditarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+   
+}
+
+#SubtituloEditarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#FormularioEditarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#boton-editarIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#boton-CancelarIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#CampoIngredienteEditar {
+    border-radius: 10px
+}
+
+#BorrarIngrediente {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#FormularioBorrarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#TituloBorrarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloBorrarIngrediente {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#BotonBorrarIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#botonCancelarIngrediente {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#TituloCrearPlato {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+   
+}
+
+#SubtituloCrearPlato {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#FormularioCrearPlato {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#CrearPlato {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#boton-crearPlato {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#CampoPlatoCrear {
+    border-radius: 10px
+}
+
+
+#boton-CancelarPlato {
+    margin-top: 30px;
+    background: #A6ACAF;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 110px;
+    height: 47px;
+    font-size: 17px;
+}
+
+#IndexPlatos {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 white;
+    background-color: #ffbc3c;
+}
+
+#TituloIndicePlatos {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#SubtituloIndicePlatos {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#TablaIndicePlatos {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+    
+}
+
+#BotonCrearIndicePlatos {
+    margin-top: 30px;
+    background: #85C1E9;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FFFFFF;
+    color: #000000;
+    width: 135px;
+    height: 45px;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 18px;
+}
+
+#tituloindex {
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-bottom: 70px;
+    margin-left: 74px;
+    color: #FFFFFF;
+    font-weight: 600
+}
+
+#subtituloindex {
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-bottom: 70px;
+    margin-left: 74px;
+    color: #FFFFFF;
+    font-weight: 600
+}
+
+#barraprincipal {
+    color: #FFFFFF;
+    font-weight: 600;
+    background: #ff4000
+}
+
+

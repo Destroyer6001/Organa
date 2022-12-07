@@ -1,0 +1,53 @@
+﻿@model IngredienteCreacionViewModel
+
+@{
+    ViewData["Title"] = "EditarIngrediente";
+}
+
+<div class="row">
+    <div class="col-md-8  offset-md-2 by-10" id="EditarIngrediente">
+
+        <div class="row" id="TituloEditarIngrediente">
+            <h1>Editar Ingrediente</h1>
+        </div>
+
+        <div class="row" id="SubtituloEditarIngrediente">
+            <h5>
+                Los ingredientes son aquellos que componen los platos que ofrecemos como empresa
+            </h5>
+        </div>
+
+        <div class="row" id="FormularioEditarIngrediente">
+            <form asp-action="Editar">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" id="CampoIngredienteEditar" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Cantidad" class="form-label"></label>
+                    <input asp-for="Cantidad" class="form-control" id="CampoIngredienteEditar" />
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoriaId" class="form-label"></label>
+                    <select asp-for="CategoriaId" asp-items="Model.CategoriaViewModel" class="form-select" id="CampoIngredienteEditar"></select>
+                    <span asp-validation-for="CategoriaId" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn" id="boton-editarIngrediente">Enviar</button>
+                <a class="btn" asp-action="Index" id="boton-CancelarIngrediente">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

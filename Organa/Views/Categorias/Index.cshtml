@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CategoriaViewModel>
+@{
+    ViewData["Title"] = "Categoria";
+}
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 by-10" id="IndexCategorias">
+        <div class="row" id="TituloIndiceCategorias">
+            <h1>Categorias</h1>
+        </div>
+
+        <div class="row" id="SubtituloIndiceCategorias">
+            <h5>Una categoria hace referencia al tipo de ingrediente que un chef puede usar</h5>
+        </div>
+
+        <div class="row" id="BotonCrearIndiceCategorias">
+            <a asp-action="Crear" class="btn mb-3">Crear</a>
+        </div>
+
+        <div class="row" id="TablaIndiceCategorias">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Acciones</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Categoria in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a class="btn" asp-action="Editar" asp-route-id="@Categoria.Id" id="BotonEditarIndiceCategorias">Editar</a>
+                                <a class="btn" asp-action="Borrar" asp-route-id="@Categoria.Id" id="BotonBorrarIndiceCategorias">Borrar</a>
+                            </td>
+                            <td>
+                                @Categoria.Nombre
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
